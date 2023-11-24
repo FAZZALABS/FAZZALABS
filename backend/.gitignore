@@ -1,0 +1,7 @@
+node_modules
+build
+credentials.json
+.env.development
+.env.production
+.idea
+.vscode
