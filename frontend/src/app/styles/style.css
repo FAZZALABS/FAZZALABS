@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: InputMonoNarrow;
+	outline: none;
+}
+body {
+	background-color: #040026;
+}
+.scrollbar_custom::-webkit-scrollbar {
+	width: 8px;
+}
+svg {
+	cursor: pointer;
+}
+div {
+	display: flex;
+	flex-direction: column;
+}
+/* .dropShadow {
+  filter: drop-shadow(0px 0px 4px #8bd5ff) drop-shadow(0px 0px 16px #0047ff);
+} */
+.boxShadow {
+	box-shadow: 0px 0px 4px #8bd5ff;
+}
+.boxShadow-revert {
+	box-shadow: 0px 0px 4px #36a834;
+}
+.textShadow {
+	text-shadow: 0px 0px 4px #8bd5ff;
+}
+.textShadow-revert {
+	text-shadow: 0px 0px 4px #5bcf24;
+}
+/* .dropShadow .dropShadow-none {
+  filter: none;
+} */
+.text {
+	overflow: hidden;
+	border-right: 0.15em solid orange;
+	/* white-space: nowrap; */
+
+	font-size: 1.6rem;
+	width: 0;
+}
+.cursor {
+	animation: typing 0.5s infinite;
+}
+@keyframes typing {
+	from {
+		color: transparent;
+	}
+	to {
+		color: #8bd5ff;
+	}
+}
+
+.cursor-revert {
+	animation: typing 0.5s infinite;
+}
+@keyframes typing-revert {
+	from {
+		color: transparent;
+	}
+	to {
+		color: #5bcf24;
+	}
+}
+
+.nftBg {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 148, 255, 0.73) 0%,
+			rgba(0, 148, 255, 0.73) 100%
+		),
+		lightgray 0px 0px / 100.45% 101.351% no-repeat;
+	/* glow */
+	box-shadow: 0px 0px 4px 0px #8bd5ff, 0px 0px 16px 0px #0047ff;
+}
+
+/* near */
+#near-wallet-selector-modal {
+	position: relative !important;
+	z-index: 2000000000000 !important;
+}
+
+.back-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nws-modal {
+	display: flex;
+	flex-direction: row;
+	height: auto !important;
+	box-shadow: 0px 0px 4px #8bd5ff;
+	border: 1px solid #8bd5ff;
+	background: #040026 !important;
+	color: #8bd5ff !important;
+	z-index: 2000000000000 !important;
+}
+.modal-left,
+.modal-right {
+	background: #040026 !important;
+	color: #8bd5ff !important;
+	box-shadow: 0px 0px 4px #8bd5ff;
+}
+.nws-modal h3,
+h2,
+p {
+	/* color: #8bd5ff !important; */
+}
+.nws-modal button {
+	background: #8bd5ff !important;
+	color: black !important;
+	box-shadow: 0px 0px 4px 0px #8bd5ff, 0px 0px 16px 0px #0047ff;
+}
+.nws-modal .content-side {
+	color: #8bd5ff !important;
+}
+.nws-modal-header {
+	display: flex;
+	flex-direction: row;
+}
+
+.nws-modal .title,
+.description {
+	color: #8bd5ff !important;
+}
+.single-wallet {
+	max-width: max-content !important;
+}
+@media (min-width: 769px) {
+	.button-spacing {
+		margin: 0px !important;
+	}
+
+	.wallet-info-wrapper {
+		margin-top: 30px !important;
+	}
+	.wallet-info-wrapper .what-wallet-hide {
+		margin-top: 0 !important;
+	}
+}
+@media (min-width: 2000px) {
+	.button-spacing {
+		margin: 0px !important;
+	}
+
+	.wallet-info-wrapper {
+		margin-top: 30px !important;
+	}
+	.wallet-info-wrapper .what-wallet-hide {
+		margin-top: 0;
+	}
+}
+.button-spacing {
+	margin: 0px !important;
+}
+.wallet-info-wrapper {
+	margin-top: 30px !important;
+}
+.wallet-info-wrapper .what-wallet-hide {
+	margin-top: 0 !important;
+}
+/* In your CSS file, e.g., App.css */
+.animated-svg {
+	/* Apply styles to the SVG */
+	width: 370px;
+	height: 338px;
+}
+
+/* Apply the animation to elements with the "animated-svg" class */
+.animated-svg circle {
+	animation: colorChange 4s linear infinite; /* Use the animation defined earlier */
+}
+
+/* Define the animation keyframes */
+@keyframes colorChange {
+	0% {
+		fill: blue;
+	}
+	25% {
+		fill: green;
+	}
+	50% {
+		fill: red;
+	}
+	75% {
+		fill: yellow;
+	}
+	100% {
+		fill: blue;
+	}
+}
+/* Define the animation keyframes */
+@keyframes colorChange {
+	0% {
+		fill: blue;
+	}
+	25% {
+		fill: green;
+	}
+	50% {
+		fill: red;
+	}
+	75% {
+		fill: yellow;
+	}
+	100% {
+		fill: blue;
+	}
+}
+
+/* Apply the animation to the animated-path class */
+.animated-path {
+	animation: colorChange 3s linear infinite; /* Use the animation defined earlier */
+}
